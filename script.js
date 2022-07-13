@@ -1,12 +1,3 @@
-const {MongoClient} = require("mongodb");
-var counter = [0,0,0];
-const Data = require('mongodb').MongoClient;
-MongoClient.connect('mongodb+srv://Crocrauts:Tommaso2002@polyquizshow.5nzfg.mongodb.net/test', function(err,db) {
-	var database = db.db('punteggi')
-	database.createCollection('vking')
-	}
-)
-
 function aggiungi(p,c) {
 	var spazi = ''
 	counter[c] += p;
